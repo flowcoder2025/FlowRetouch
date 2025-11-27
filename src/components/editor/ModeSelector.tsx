@@ -98,9 +98,9 @@ export function ModeInfoCard({ mode }: ModeInfoCardProps) {
         원하는 보정 내용을 자유롭게 대화로 요청하세요.
       </p>
       <ul className="text-xs text-rose-600 space-y-1">
-        <li>• "피부만 살짝 보정해줘"</li>
-        <li>• "따뜻한 빈티지 느낌으로 바꿔줘"</li>
-        <li>• "배경만 흐리게 해줘"</li>
+        <li>• &quot;피부만 살짝 보정해줘&quot;</li>
+        <li>• &quot;따뜻한 빈티지 느낌으로 바꿔줘&quot;</li>
+        <li>• &quot;배경만 흐리게 해줘&quot;</li>
         <li>• 세부 조정을 대화로 요청 가능</li>
       </ul>
     </div>

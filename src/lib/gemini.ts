@@ -9,7 +9,8 @@ console.log("[Gemini] SDK initialized with API key:", process.env.GEMINI_API_KEY
 
 // Gemini 3 Pro Image 모델 (이미지 생성/편집 전용)
 const IMAGE_MODEL_NAME = "gemini-3-pro-image-preview";
-// Gemini 3 Pro 모델 (텍스트 전용)
+// Gemini 3 Pro 모델 (텍스트 전용) - 향후 텍스트 전용 기능 확장용
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const TEXT_MODEL_NAME = "gemini-3-pro-preview";
 
 // 보정 모드 타입

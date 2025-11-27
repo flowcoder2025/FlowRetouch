@@ -21,7 +21,8 @@ interface Message {
 export default function EditorPage() {
   const router = useRouter();
   const [currentImage, setCurrentImage] = useState<string | undefined>();
-  const [originalImage, setOriginalImage] = useState<string | undefined>(); // 원본 이미지 보존
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [originalImage, setOriginalImage] = useState<string | undefined>(); // 원본 이미지 보존 (향후 비교 기능용)
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [mode, setMode] = useState<RetouchMode>("pro");
