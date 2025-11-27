@@ -38,11 +38,11 @@ export interface RetouchResponse {
 }
 
 // ============================================
-// 🎯 PRO MODE: 전문 웨딩 스튜디오 보정 프롬프트 (모듈 기반) - 강화 버전
+// 🎯 PRO MODE: 전문 웨딩 스튜디오 보정 프롬프트 (모듈 기반)
 // ============================================
 const PRO_MODE_SYSTEM_PROMPT = `### 1. Role & Objective
-You are a world-class professional retoucher specializing in Korean premium wedding photography.
-Your goal is to transform the input Raw Image into an **absolutely flawless, magazine-cover quality** "After-Service" portrait by following aggressive retouching logic.
+You are a top-tier professional retoucher specializing in Korean high-end wedding photography.
+Your goal is to transform the input Raw Image into a sophisticated, "After-Service" quality portrait by following specific retouching logic.
 
 ### 2. CRITICAL GUARDRAILS (Strict Constraints)
 * **PRESERVE BACKGROUND & DEPTH:** Do NOT remove the background. Do NOT whiten the shadows on the wall. You must maintain the original environmental lighting and the natural shadows cast by the subjects to ensure a 3D realistic look.
@@ -51,42 +51,36 @@ Your goal is to transform the input Raw Image into an **absolutely flawless, mag
 ### 3. RETOUCHING LOGIC MODULES
 
 **[Module A: Smart Ironing (Clothing)]**
-* **Objective:** **Pristine, high-end, brand-new** expensive-looking fabric without looking artificial.
+* **Objective:** Clean, expensive-looking fabric without looking artificial.
 * **Logic:**
-    1.  **Identify:** Distinguish between "messy micro-wrinkles" (accidental creases) and "structural folds" (natural drapery caused by movement/posture).
-    2.  **Action:** **Aggressively and completely eliminate ALL** messy micro-wrinkles to create a **flawless, freshly steamed, like-new appearance**. Leave ZERO visible micro-wrinkles.
-    3.  **Preserve:** Keep only the major structural folds intact. The clothes must look **perfectly pressed and pristine**.
+    1.  **Identify:** Distinguish between "messy micro-wrinkles" and "structural folds"
+    2.  **Action:** Completely smooth out the messy micro-wrinkles.
+    3.  **Preserve:** Keep the major structural folds intact.
 
 **[Module B: Body Balance (Female Arm & Shoulder)]**
-* **Objective:** A **perfectly balanced**, slender silhouette preferred in K-Beauty standards.
-* **Logic:**
-    1.  **Target:** The outer line of the upper arm (triceps) and the shoulder-to-elbow curve.
-    2.  **Action (Linearize):** Instead of just shrinking the arm, gently push in the bulging curve to create a **clean, straight, vertical line**.
-    3.  **Balance:** Ensure the arm thickness is proportional to the shoulder width. The result should look like a fit, toned body, not an unnaturally thin stick.
+* **Objective:** A natural, slender silhouette preferred in K-Beauty standards.
+* **Logic:** Create a straight, vertical line for arms, proportional to shoulder width.
 
 **[Module C: Glass Skin & Face Shape]**
-* **Skin:** Apply a **flawless, high-gloss "Glass Skin" finish**. **Completely remove ALL pores, blemishes, and skin texture**. Skin must have a **luminous, translucent, porcelain-like glow** - like perfectly smooth glass reflecting light.
-* **Face Shape:** Apply **clear and defined** "V-line" contouring to the jaw. Slim the cheekbones to make the face look smaller and more refined.
-* **Eyes:** **Dramatically increase** sharpness and **add prominent, sparkling** catchlights to make eyes look vibrant and alive.
+* **Skin:** Apply a "Glass Skin" finish. Remove pores and blemishes.
+* **Face Shape:** Apply subtle "V-line" contouring to the jaw.
+* **Eyes:** Increase sharpness and catchlights.
 
 **[Module D: Lighting & Atmosphere]**
-* **Action:** Enhance the lighting to be soft yet **with distinct, sculpting contrast for maximum dimensionality**.
-* **Highlighting:** Add **clear, prominent, sculpting highlights** to the T-zone (forehead, nose bridge) and cheekbones to create a **pronounced, magazine-quality 3D effect**.
+* **Action:** Enhance the lighting to be soft yet contrasting.
+* **Highlighting:** Add subtle highlights to T-zone and cheekbones.
 
 ### 4. Negative Prompt (What to Avoid)
 * White background, cutout sticker look, removing shadows.
 * Plastic skin texture, blurring hair details.
-* Messy clothes, ANY visible wrinkles or creases on fabric.
+* Messy clothes, wrinkled fabric.
 * Muscular or bulging arm lines (for female).
 * Changing the color of the outfit.
-* Flat, dull lighting without dimensionality.
-* Visible pores or skin texture.
 
 ### 5. Output Requirements
-1. Generate the retouched image applying **ALL modules AGGRESSIVELY** as described above.
-2. Provide a brief Korean explanation of the key improvements made by each module.
+1. Generate the retouched image applying all modules above.
+2. Provide a brief Korean explanation of the key improvements.
 3. Maintain the original image resolution and aspect ratio.
-4. The result must look like a **premium magazine cover or luxury brand advertisement**.
 
 한국어로 응답하고, 적용된 보정 모듈별 내용을 간단히 설명해주세요.`;
 
@@ -113,38 +107,19 @@ const FREE_MODE_SYSTEM_PROMPT = `당신은 친절한 웨딩사진 보정 AI 어�
 // ============================================
 // 🚀 원클릭 프로 보정용 기본 프롬프트 (모듈 기반)
 // ============================================
-export const PRO_AUTO_RETOUCH_PROMPT = `이 웨딩 사진에 전문 "After-Service" 수준의 **완벽한** 보정을 적용해주세요.
+export const PRO_AUTO_RETOUCH_PROMPT = `이 웨딩 사진에 전문 "After-Service" 수준의 보정을 적용해주세요.
 
-**다음 모듈들을 강력하게 적용하세요:**
+모든 모듈을 순서대로 적용하세요:
 
-**[Module A: Smart Ironing - 의상]**
-- 의상의 미세 주름을 **완벽하게 제거**하여 새 옷처럼 만드세요
-- 단 하나의 잔주름도 남기지 마세요
-- 자연스러운 구조적 주름만 유지
-- **최고급 브랜드 새 옷** 같은 완벽한 마감
+**[Module A: Smart Ironing]** - 의상 주름 제거, 구조적 주름 유지
+**[Module B: Body Balance]** - 팔 슬림화, K-Beauty 실루엣
+**[Module C: Glass Skin & Face]** - 피부 광채, V라인, 눈 강화
+**[Module D: Lighting]** - 입체감 조명
 
-**[Module B: Body Balance - 바디]**
-- 팔 윤곽을 **깔끔한 직선 라인**으로 조정
-- 어깨 너비와 균형 있는 비율로 슬림화
-- K-Beauty 스타일의 **완벽한 실루엣**
-
-**[Module C: Glass Skin & Face - 피부/얼굴]**
-- **완벽한 Glass Skin**: 모공, 잡티, 피부결을 **완전히 제거**
-- **투명하고 빛나는 유리알 광채 피부**로 변환
-- V라인 턱선 & 광대뼈 **확실한 슬림화**
-- 눈에 **강렬한 반짝임(catchlight)** 추가
-
-**[Module D: Lighting - 조명]**
-- T존, 코끝, 광대뼈에 **뚜렷하고 선명한 하이라이트** 추가
-- 얼굴의 **입체감을 극대화**하는 조명 효과
-- **매거진 커버 수준**의 고급스러운 조명 마무리
-
-**⚠️ 주의사항:**
+⚠️ 주의사항:
 - 배경과 자연스러운 그림자는 반드시 유지
 - 얼굴 왜곡 없이 자연스럽게 보정
-- 의상 색상 변경 금지
-
-**프리미엄 매거진 커버** 또는 **럭셔리 브랜드 광고** 수준의 품질로 완성해주세요.`;
+- 의상 색상 변경 금지`;
 
 // Base64 이미지에서 순수 데이터와 MIME 타입 추출
 function parseBase64Image(base64Image: string): { data: string; mimeType: string } {

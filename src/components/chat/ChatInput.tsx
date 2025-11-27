@@ -117,8 +117,8 @@ export default function ChatInput({
         </button>
       </div>
 
-      {/* 프리셋 제안 */}
-      <div className="flex gap-2 mt-3 flex-wrap">
+      {/* 프리셋 제안 - 모바일에서 가로 스크롤 */}
+      <div className="flex gap-2 mt-2 lg:mt-3 overflow-x-auto pb-1 lg:flex-wrap scrollbar-hide">
         {[
           "피부 톤을 자연스럽게 보정해줘",
           "드레스를 더 밝게 해줘",
@@ -129,7 +129,7 @@ export default function ChatInput({
             key={suggestion}
             onClick={() => !disabled && onSend(suggestion)}
             disabled={disabled}
-            className="px-3 py-1.5 text-xs bg-rose-50 hover:bg-rose-100 text-rose-600 rounded-full transition-colors disabled:opacity-50"
+            className="px-3 py-1.5 text-[11px] lg:text-xs bg-rose-50 hover:bg-rose-100 text-rose-600 rounded-full transition-colors disabled:opacity-50 whitespace-nowrap flex-shrink-0"
           >
             {suggestion}
           </button>
