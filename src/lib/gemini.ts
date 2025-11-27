@@ -169,8 +169,7 @@ export async function chatWithImage(
       model: IMAGE_MODEL_NAME,
       contents: parts,
       config: {
-        temperature: 0.7,
-        maxOutputTokens: 8192,
+        responseModalities: ["TEXT", "IMAGE"],
       },
     });
 
@@ -219,8 +218,7 @@ export async function proAutoRetouch(image: string): Promise<RetouchResponse> {
         { text: PRO_MODE_SYSTEM_PROMPT + "\n\n" + PRO_AUTO_RETOUCH_PROMPT }
       ],
       config: {
-        temperature: 0.5,
-        maxOutputTokens: 8192,
+        responseModalities: ["TEXT", "IMAGE"],
       },
     });
     console.log("[ProAutoRetouch] API response received");
