@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { chatWithImage, proAutoRetouch, ChatMessage, RetouchMode } from "@/lib/gemini";
 
-export const maxDuration = 60; // 최대 60초 타임아웃
+// Edge Runtime 사용 (Hobby 플랜에서 30초 타임아웃)
+export const runtime = "edge";
+export const maxDuration = 30; // Edge는 최대 30초
 
 export async function POST(request: NextRequest) {
   try {
