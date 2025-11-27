@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Wedding Retouch AI | 웨딩사진 보정 서비스",
-  description: "AI 기반 웨딩사진 보정 서비스. Nano Banana Pro로 완벽한 웨딩 사진을 만들어보세요.",
-  keywords: ["웨딩사진", "사진보정", "AI", "Nano Banana Pro", "웨딩"],
+  title: "FlowRetouch | AI 웨딩사진 보정 서비스",
+  description: "FlowCoder 팀이 제공하는 AI 기반 웨딩사진 보정 서비스. Gemini 3 Pro Image로 완벽한 웨딩 사진을 만들어보세요.",
+  keywords: ["웨딩사진", "사진보정", "AI", "FlowRetouch", "FlowCoder", "Gemini"],
+  authors: [{ name: "FlowCoder" }],
 };
 
 export default function RootLayout({

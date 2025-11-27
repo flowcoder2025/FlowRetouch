@@ -183,7 +183,7 @@ export default function Home() {
       <footer className="py-8 bg-gray-900 text-gray-400">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-sm">
-            © 2025 Wedding Retouch AI. Powered by Nano Banana Pro (Gemini 3 Pro Image Preview)
+            © 2025 FlowCoder. FlowRetouch - Powered by Gemini 3 Pro Image
           </p>
         </div>
       </footer>

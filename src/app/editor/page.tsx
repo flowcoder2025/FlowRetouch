@@ -299,7 +299,7 @@ export default function EditorPage() {
           </button>
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-rose-500" />
-            <span className="font-display font-semibold text-gray-800">Wedding Retouch AI</span>
+            <span className="font-display font-semibold text-gray-800">FlowRetouch</span>
           </div>
           <Button variant="ghost" size="sm" onClick={handleClearChat}>
             <Trash2 className="w-4 h-4 mr-1" />
