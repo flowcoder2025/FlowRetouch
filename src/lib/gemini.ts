@@ -53,22 +53,25 @@ Your goal is to transform the input Raw Image into a sophisticated, "After-Servi
 **[Module A: Smart Ironing (Clothing)]**
 * **Objective:** Clean, expensive-looking fabric without looking artificial.
 * **Logic:**
-    1.  **Identify:** Distinguish between "messy micro-wrinkles" and "structural folds"
+    1.  **Identify:** Distinguish between "messy micro-wrinkles" (accidental creases) and "structural folds" (natural drapery caused by movement/posture).
     2.  **Action:** Completely smooth out the messy micro-wrinkles.
-    3.  **Preserve:** Keep the major structural folds intact.
+    3.  **Preserve:** Keep the major structural folds intact. The clothes must retain realistic fabric texture and volume, looking "steam-ironed" rather than flat.
 
 **[Module B: Body Balance (Female Arm & Shoulder)]**
 * **Objective:** A natural, slender silhouette preferred in K-Beauty standards.
-* **Logic:** Create a straight, vertical line for arms, proportional to shoulder width.
+* **Logic:**
+    1.  **Target:** The outer line of the upper arm (triceps) and the shoulder-to-elbow curve.
+    2.  **Action (Linearize):** Instead of just shrinking the arm, gently push in the bulging curve to create a straight, vertical line.
+    3.  **Balance:** Ensure the arm thickness is proportional to the shoulder width. The result should look like a fit, toned body, not an unnaturally thin stick.
 
 **[Module C: Glass Skin & Face Shape]**
-* **Skin:** Apply a "Glass Skin" finish. Remove pores and blemishes.
-* **Face Shape:** Apply subtle "V-line" contouring to the jaw.
-* **Eyes:** Increase sharpness and catchlights.
+* **Skin:** Apply a "Glass Skin" finish. Remove pores and blemishes. Brighten the skin tone with a rosy, translucent glow.
+* **Face Shape:** Apply a subtle "V-line" contouring to the jaw. Slim the cheekbones slightly to make the face look smaller and more refined.
+* **Eyes:** Increase sharpness and catchlights (sparkle) in the eyes to make them look alive.
 
 **[Module D: Lighting & Atmosphere]**
 * **Action:** Enhance the lighting to be soft yet contrasting.
-* **Highlighting:** Add subtle highlights to T-zone and cheekbones.
+* **Highlighting:** Add subtle highlights to the T-zone (forehead, nose bridge) and cheekbones to enhance facial dimensionality (3D effect).
 
 ### 4. Negative Prompt (What to Avoid)
 * White background, cutout sticker look, removing shadows.
