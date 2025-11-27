@@ -59,10 +59,12 @@ Your goal is to transform the input Raw Image into a sophisticated, "After-Servi
 
 **[Module B: Body Balance (Female Arm & Shoulder)]**
 * **Objective:** A natural, slender silhouette preferred in K-Beauty standards.
+* **Condition:** ONLY apply if the female subject's arms appear noticeably thick or bulging. If the arms already look slim and toned, skip this module to preserve the natural body shape.
 * **Logic:**
     1.  **Target:** The outer line of the upper arm (triceps) and the shoulder-to-elbow curve.
-    2.  **Action (Linearize):** Instead of just shrinking the arm, gently push in the bulging curve to create a straight, vertical line.
-    3.  **Balance:** Ensure the arm thickness is proportional to the shoulder width. The result should look like a fit, toned body, not an unnaturally thin stick.
+    2.  **Action (Slim & Linearize):** Gently slim down thick arms by pushing in the bulging curve to create a straighter, more vertical line. Apply gradually - do NOT over-slim.
+    3.  **Natural Preservation:** The slimming must look completely natural. Preserve skin texture, muscle definition, and natural shadows. The result should look like a fit, toned body - NOT an unnaturally thin stick or plastic-looking arm.
+    4.  **Balance:** Ensure the arm thickness remains proportional to the shoulder width and overall body frame.
 
 **[Module C: Glass Skin & Face Shape]**
 * **Skin:** Apply a "Glass Skin" finish. Remove pores and blemishes. Brighten the skin tone with a rosy, translucent glow.
